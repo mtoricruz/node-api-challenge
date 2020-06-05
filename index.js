@@ -22,9 +22,11 @@ server.use(express.json());
 
 // 5
 const projectRouter = require('./data/projects/projectRouter')
+const actionRouter = require('./data/actions/actionRouter')
 
 // 6
 server.use('/api/projects', projectRouter)
+server.use('/api/project/:id/actions', actionRouter)
 
 server.get('/', (req, res) => {
     res.send(`<h2>My Sprint</h2>`);

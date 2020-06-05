@@ -42,9 +42,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 Two parts of Express that I learned this week were Express Routing and Express Middleware.
 
-- [ ] Describe Middleware?
+- [x] Describe Middleware?
 
-- [ ] Describe a Resource?
+Middleware is a function that can act as a gate between the HTTP req either making a response, or being passed on through more middleware functions. They are useful for verifying certain data within a request are present/valid before returning a response. Great for keeping api data secure against unwanted/malicious requests
+
+- [x] Describe a Resource?
+
+A resource is any kind of data that is stored in an API. For example in this sprint, id/name/completed/description are some resources and they can take the form of a string/integer/boolean.
 
 - [x] What can the API return to help clients know if a request was successful?
 
@@ -61,7 +65,7 @@ We partition our application into sub apps by taking advantage of different rout
 
 Design and build the necessary endpoints to:
 
-- [ ] Perform CRUD operations on _projects_ and _actions_. When adding an action, make sure the `project_id` provided belongs to an existing `project`. If you try to add an action with an `id` of 3 and there is no project with that `id` the database will return an error.
+- [x] Perform CRUD operations on _projects_ and _actions_. When adding an action, make sure the `project_id` provided belongs to an existing `project`. If you try to add an action with an `id` of 3 and there is no project with that `id` the database will return an error.
 - [x] Retrieve the list of actions for a project.
 
 Please read the following sections before implementing the Minimum Viable Product, they describe how the database is structured and the files and methods available for interacting with the data.
